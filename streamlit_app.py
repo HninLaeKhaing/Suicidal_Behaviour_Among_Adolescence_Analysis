@@ -5,9 +5,9 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Page title
-st.set_page_config(page_title="Behaviour Analysis & Forecast", layout="wide")
-st.title("📊 Behavioural Data Analysis & Forecast")
-st.markdown("Analyze youth behavioural patterns by country and predict future trends.")
+st.set_page_config(page_title="Sucide Case In Adolescence Analysis & Forcast ", layout="wide")
+st.title("📊 Sucide Case In Adolescence Analysis & Forcast")
+st.markdown("Analyze youth sucide case patterns by country and predict future trends.")
 
 # Load dataset
 @st.cache_data
@@ -32,7 +32,7 @@ non_behaviour_cols = ['Country', 'Year', 'Age Group', 'Sex']
 behaviour_cols = [col for col in df.columns if col not in non_behaviour_cols]
 
 # --- Plot 1: Bar chart for selected year ---
-st.subheader(f"📌 Average Behaviours in {selected_country} - {selected_year}")
+st.subheader(f"📌 Average Case in {selected_country} - {selected_year}")
 year_df = country_df[country_df['Year'] == selected_year]
 behaviour_avg = year_df[behaviour_cols].mean()
 
@@ -70,7 +70,7 @@ for behaviour in behaviour_cols:
 
 ax2.set_xlabel("Year")
 ax2.set_ylabel("Average Value")
-ax2.set_title(f"Behaviour Forecast in {selected_country} (Next 3 Years)")
+ax2.set_title(f"Forecast in {selected_country} (Next 3 Years)")
 ax2.grid(True)
 ax2.legend(loc='center left', bbox_to_anchor=(1, 0.5))
 st.pyplot(fig2)
