@@ -41,7 +41,7 @@ else:
             behaviour_avg = year_df[behaviour_cols].mean()
 
             plt.figure(figsize=(12, 6))
-            plt.barh(behaviour_avg.index, behaviour_avg.values, color='skyblue')
+            plt.barh(behaviour_avg.index, behaviour_avg.values, color='red')
             plt.xlabel("Average Value")
             plt.title(f"Behaviour Averages in {selected_country} ({selected_year})")
             plt.grid(axis='x')
