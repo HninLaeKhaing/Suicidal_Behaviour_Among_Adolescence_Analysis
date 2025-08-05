@@ -5,9 +5,9 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Page title
-st.set_page_config(page_title="Sucide Case In Adolescence Analysis & Forcast ", layout="wide")
-st.title("📊 Sucide Case In Adolescence Analysis & Forcast")
-st.markdown("Analyze youth sucide case patterns by country and predict future trends.")
+st.set_page_config(page_title="Sucidal Behaviour Among Adolescence Analysis & Forcast ", layout="wide")
+st.title("📊 Sucidal Behaviour Among Adolescence Analysis & Forcast")
+st.markdown("Analyze youth behaviour patterns by country and predict future trends.")
 
 # Load dataset
 @st.cache_data
