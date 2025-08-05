@@ -5,8 +5,8 @@ import numpy as np
 from sklearn.linear_model import LinearRegression
 
 # Page title
-st.set_page_config(page_title="Behaviour Analysis & Forecast", layout="wide")
-st.title("📊 Behavioural Data Analysis & Forecast")
+st.set_page_config(page_title="YouthWatch: Real-Time Suicidal Behavioural Risk Forecast For Adolescents", layout="wide")
+st.title("📊 YouthWatch: Real-Time Suicidal Behavioural Risk Forecast For Adolescents")
 st.markdown("Analyze youth behavioural patterns by country and predict future trends.")
 
 # Load dataset
